@@ -1,3 +1,3 @@
 Air	“oaaawaala”
-Air	“oaaawaala”
-Air	"oaaawaala"
+Land	“a1d22n333a4444p”
+Ice	"zmzmzmzaztzozh"

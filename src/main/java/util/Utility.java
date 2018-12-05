@@ -29,6 +29,7 @@ public class Utility {
 		Map<Kingdom, Set<Kingdom>> sortedMap = new LinkedHashMap<Kingdom, Set<Kingdom>>();
 		
 		for(Map.Entry<Kingdom, Set<Kingdom>> entry : list) {
+			System.out.println("Entry Key : " + entry.getKey() + " Entry Value size : " + entry.getValue().size());
 			sortedMap.put(entry.getKey(),entry.getValue());
 		}
 		

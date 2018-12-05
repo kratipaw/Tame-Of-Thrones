@@ -77,10 +77,9 @@ public class Main {
 		}
 		
 		Set<Kingdom> nonCompeting = Input.getNonCompetingKingdoms(competingKingdoms);
-		System.out.println("non size : " + nonCompeting.size());
+		
 		Input.readProblem2InputFileAndPopulate(competingKingdoms, nonCompeting);
 		
-		new Ballot().setBallotMessages(Input.getProblem2InputBallotList());
 		new Ballot().runBallotAndDeclareWinner(competingKingdoms, nonCompeting, Constants.BALLOT_SIZE);
 		
 	}

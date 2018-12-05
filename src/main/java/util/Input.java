@@ -8,7 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -109,8 +108,7 @@ public class Input {
 		return competingKingdoms;
 	}
 	
-	public static void readProblem2InputFileAndPopulate(Set<Kingdom> competingKingdoms, Set<Kingdom> nonCompeting) {
-		System.out.println("non input size : " + nonCompeting.size());
+	public static ArrayList<Message> readProblem2InputFileAndPopulate(Set<Kingdom> competingKingdoms, Set<Kingdom> nonCompeting) {
 		int size = competingKingdoms.size() * nonCompeting.size();
 		
 		int i = 0;
@@ -131,6 +129,7 @@ public class Input {
 				i++;
 			}
 		}
+		return ballotList;
 	}
 	
 	public static Set<Kingdom> getNonCompetingKingdoms(Set<Kingdom> competingKingdoms){

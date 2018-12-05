@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +25,7 @@ public class Ballot {
 	
 	private Set<Kingdom> nonCompeting = null;
 	
-	private ArrayList<Message> ballotMessages = new ArrayList<>();
+	private static ArrayList<Message> ballotMessages = null;
 	
 	private Map<Kingdom, Set<Kingdom>> ballotVotingResults = null;
 	
@@ -34,16 +35,8 @@ public class Ballot {
 	}
 	
 	private void setNonCompeting(Set<Kingdom> nonCompeting) {
-		System.out.println("non 1 size : " + nonCompeting.size());
 		this.nonCompeting = new HashSet<>();
 		this.nonCompeting.addAll(nonCompeting);
-	}
-	
-	public void setBallotMessages(ArrayList<Message> ballotMessages) {
-		System.out.println("ballot msgs size " + ballotMessages.size());
-		//this.ballotMessages = new ArrayList<>();
-		this.ballotMessages.addAll(ballotMessages);
-		System.out.println("ballot msgs size " + this.ballotMessages.size());
 	}
 	
 	public Map<Kingdom, Set<Kingdom>> getBallotVotingResults() {
@@ -94,18 +87,18 @@ public class Ballot {
 		
 		boolean result = false;
 		
-		ballotVotingResults = new HashMap<Kingdom, Set<Kingdom>>();
+		ballotVotingResults = new LinkedHashMap<Kingdom, Set<Kingdom>>();
 		
 		int count = 0;
 		
 		do {
 			result = runBallotHelper();
-			
+			System.out.println("result : " + result);
 			count++;
 		}while(!result && count < Constants.MAX_RUN_BALLOT);
 		
 		if(count == Constants.MAX_RUN_BALLOT && !result) {
-			System.out.println("Ballot has run " + Constants.MAX_RUN_BALLOT + " times, still no King could be declared.");
+			System.out.println("Ballot has run (run Ballot)" + Constants.MAX_RUN_BALLOT + " times, still no King could be declared.");
 			return;
 		}
 		
@@ -113,8 +106,11 @@ public class Ballot {
 	
 	private boolean runBallotHelper() {
 		
+		ballotVotingResults.clear();
+		
 		List<Message> ballotResults = null;
-		System.out.println("runballot helper : " + ballotMessages.size());
+		ballotMessages = new ArrayList<>();
+		ballotMessages.addAll(Input.getProblem2InputBallotList());
 		if(competing.size() == 1)
 			ballotResults = RandomGenerator.getBallotResultantMessages(ballotMessages, nonCompeting.size());
 		
@@ -125,7 +121,7 @@ public class Ballot {
 			Kingdom from = msg.getFrom();
 			Kingdom to = msg.getTo();
 			String message = msg.getContent();
-			//System.out.println("Balot result : " + msg.toString());
+			System.out.println("Balot result : " + msg.toString());
 			Set<Kingdom> allies = null;
 			
 			if(isValidMessage(message.replaceAll("[^a-zA-Z]", "").toLowerCase(), to.getEmblem())) {
@@ -167,7 +163,7 @@ public class Ballot {
 		int count = 0;
 		
 		do {
-			
+			System.out.println("Competing : " + competing.toString());
 			Set<Kingdom> newCompeting = getNewCompetingKingdoms(competing, sortedMap);
 			
 			Input.readProblem2InputFileAndPopulate(newCompeting, nonCompeting);
@@ -179,7 +175,7 @@ public class Ballot {
 			ballotVotingResults.clear();
 			runBallot();
 			
-			if(ballotVotingResults == null)
+			if(ballotVotingResults == null || ballotVotingResults.size() == 0)
 				return null;
 			
 			sortedMap.clear();

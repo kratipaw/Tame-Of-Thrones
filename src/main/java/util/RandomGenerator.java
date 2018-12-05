@@ -16,7 +16,6 @@ public class RandomGenerator {
 	}
 	
 	public static List<Message> getBallotResultantMessages(ArrayList<Message> ballotMessages, int max){
-		System.out.println("random : " + ballotMessages.size());
 		Collections.shuffle(ballotMessages);
 		
 		return ballotMessages.subList(0, max);
