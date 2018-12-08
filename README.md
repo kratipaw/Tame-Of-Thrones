@@ -2,12 +2,12 @@
 
 There is no ruler in the universe of Southeros and pandemonium reigns. 
 There are six kingdoms in Southeros.Each kingdom has an animal emblem. They are: 
-LAND emblem - Panda, 
-WATER emblem - Octopus, 
-ICE emblem - Mammoth, 
-AIR emblem - Owl, 
-FIRE emblem - Dragon,
-Space emblem - Gorilla
+LAND emblem - Panda, <br/>
+WATER emblem - Octopus, <br/>
+ICE emblem - Mammoth, <br/>
+AIR emblem - Owl, <br/>
+FIRE emblem - Dragon,<br/>
+Space emblem - Gorilla. <br/>
 
 ## Problem 1: A Golden Crown
 
@@ -24,42 +24,44 @@ least once and 'a' at-least twice. If he sends "a1d22n333a4444p" to the Land kin
 ### Sample Input Output
 
 **Example 1 :** 
-Who is the ruler of Southeros?
-Ouput: None
-Allies of Ruler?
-Output: None
 
-Input Messages to kingdoms from King Shan:
+Who is the ruler of Southeros?<br/>
+Ouput: None<br/>
+Allies of Ruler?<br/>
+Output: None<br/>
 
-Input: Air, “oaaawaala” Input: 
-Input: Land, “a1d22n333a4444p” Input: 
-Input: Ice, “zmzmzmzaztzozh” 
+Input Messages to kingdoms from King Shan:<br/>
+
+Input: Air, “oaaawaala”  <br/>
+Input: Land, “a1d22n333a4444p” <br/>
+Input: Ice, “zmzmzmzaztzozh” <br/>
 
 Output :
 
-Who is the ruler of Southeros?
-Output: King Shan
-Allies of Ruler?
-Output: Air, Land, Ice
+Who is the ruler of Southeros?<br/>
+Output: King Shan<br/>
+Allies of Ruler?<br/>
+Output: Air, Land, Ice<br/>
 
 **Exaxmple 2 :**
 
-Who is the ruler of Southeros?
-Output: None
-Allies of King Shan?
-Output: None
+Who is the ruler of Southeros? <br/>
+Output: None <br/>
+Allies of King Shan? <br/>
+Output: None <br/>
 
-Input Messages to kingdoms from King Shan: 
-Input: Air, “Let’s swing the sword together”
-Land, “Die or play the tame of thrones”
-Ice, “Ahoy! Fight for me with men and money”
-Input: Water, “Summer is coming”
-Input: Fire, “Drag on Martin!”
+Input Messages to kingdoms from King Shan: <br/>
+ 
+Input: Air, “Let’s swing the sword together”<br/>
+Input: Land, “Die or play the tame of thrones”<br/>
+Input: Ice, “Ahoy! Fight for me with men and money”<br/>
+Input: Water, “Summer is coming”<br/>
+Input: Fire, “Drag on Martin!”<br/>
 
-Who is the ruler of Southeros?
-Output: King Shan
-Allies of King Shan?
-Output: Air, Land, Ice, Fire
+Who is the ruler of Southeros?<br/>
+Output: King Shan<br/>
+Allies of King Shan?<br/>
+Output: Air, Land, Ice, Fire<br/>
 
 ## Problem 2: Breaker Of Chains
 
@@ -145,24 +147,24 @@ Output: Fire Space  <br/>
 
 **Example 3 :** 
 
-Who is the ruler of Southeros?
-Output: None
-Allies of Ruler?
-Output: None
+Who is the ruler of Southeros? <br/>
+Output: None <br/>
+Allies of Ruler? <br/>
+Output: None <br/>
 
-Enter the kingdoms competing to be the ruler:
-Input: Fire Space
+Enter the kingdoms competing to be the ruler: <br/>
+Input: Fire Space <br/>
 
-Results after round one ballot count
-Output: Allies for Fire : 0
-Output: Allies for Space: 0
+Results after round one ballot count <br/>
+Output: Allies for Fire : 0 <br/>
+Output: Allies for Space: 0 <br/>
 
-Results after round two ballot count
-Output: Allies for Fire : 1
-Output: Allies for Space: 2
+Results after round two ballot count <br/>
+Output: Allies for Fire : 1 <br/>
+Output: Allies for Space: 2 <br/>
 
-Who is the ruler of Southeros?
-Output: Space
-Allies of Ruler?
-Output: Land Ice
+Who is the ruler of Southeros? <br/>
+Output: Space <br/>
+Allies of Ruler? <br/>
+Output: Land Ice <br/>
 
