@@ -79,11 +79,11 @@ through the ballot system.
 **Rules to decide allegiance by a kingdom**
 
 1. The receiving kingdom has to give allegiance to the sending kingdom if the message contains the letters 
-	of the animal in their emblem (same as problem 1).
+of the animal in their emblem (same as problem 1).
 2. If the receiving kingdom is competing to be the ruler, they will not give their allegiance even 
-	if the message they received is correct.
-3. A kingdom cannot give their allegiance twice. If they have given their allegiance once, 
-	they will not give their allegiance again even if they get a second message and the message is correct.
+if the message they received is correct.
+3. A kingdom cannot give their allegiance twice. If they have given their allegiance once, they will not 
+give their allegiance again even if they get a second message and the message is correct.
 
 **In case there is a tie**
 1. If there is a tie, the whole ballot process is repeated but only with the tied kingdoms till 
@@ -100,48 +100,48 @@ The format of the message dropped in the ballot should contain :
 
 **Example 1 :**
 
-Who is the ruler of Southeros?
-Output: None
-Allies of Ruler?
-Output: None
+Who is the ruler of Southeros? <br/>
+Output: None <br/>
+Allies of Ruler? <br/>
+Output: None <br/>
 
-Enter the kingdoms competing to be the ruler:
-Input: Ice Space Air
+Enter the kingdoms competing to be the ruler: <br/>  
+Input: Ice Space Air <br/>
 
-(the messages should now be randomly picked from the given table for each).
+(the messages should now be randomly picked from the given table for each). <br/>  
 
-Results after round one ballot count
-Output: Allies for Ice : 2
-Output: Allies for Space: 1
-Output: Allies for Air: 0
+Results after round one ballot count <br/>
+Output: Allies for Ice : 2 <br/>
+Output: Allies for Space: 1 <br/>
+Output: Allies for Air: 0 <br/>
 
-Who is the ruler of Southeros?
-Output: Ice
-Allies of Ruler?
-Output: Land Fire
+Who is the ruler of Southeros? <br/>
+Output: Ice <br/>
+Allies of Ruler? <br/>
+Output: Land Fire <br/>
 
 **Example 2 :**
 
-Who is the ruler of Southeros? 
-Output: None 
-Allies of Ruler? 
-Output: None 
+Who is the ruler of Southeros? <br/> 
+Output: None  <br/>
+Allies of Ruler?  <br/>
+Output: None  <br/>
 
-Enter the kingdoms competing to be the ruler: 
-Input: Land Air 
+Enter the kingdoms competing to be the ruler: <br/> 
+Input: Land Air  <br/>
 
-Results after round one ballot count 
-Output: Allies for Land : 1 
-Output: Allies for Air: 1 
+Results after round one ballot count <br/> 
+Output: Allies for Land : 1  <br/>
+Output: Allies for Air: 1  <br/>
 
-Results after round two ballot count 
-Output: Allies for Land : 1 
-Output: Allies for Air: 2 
+Results after round two ballot count <br/> 
+Output: Allies for Land : 1  <br/>
+Output: Allies for Air: 2  <br/>
 
-Who is the ruler of Southeros? 
-Output: Air 
-Allies of Ruler? 
-Output: Fire Space 
+Who is the ruler of Southeros?  <br/>
+Output: Air  <br/>
+Allies of Ruler?  <br/>
+Output: Fire Space  <br/>
 
 **Example 3 :** 
 
