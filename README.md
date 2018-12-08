@@ -2,12 +2,12 @@
 
 There is no ruler in the universe of Southeros and pandemonium reigns. 
 There are six kingdoms in Southeros.Each kingdom has an animal emblem. They are: 
-LAND emblem - Panda, <br/>
-WATER emblem - Octopus, <br/>
-ICE emblem - Mammoth, <br/>
-AIR emblem - Owl, <br/>
-FIRE emblem - Dragon,<br/>
-Space emblem - Gorilla. <br/>
+Land emblem - panda, <br/>
+Water emblem - octopus, <br/>
+Ice emblem - mammoth, <br/>
+Air emblem - owl, <br/>
+Fire emblem - dragon,<br/>
+Space emblem - gorilla. <br/>
 
 ## Problem 1: A Golden Crown
 
@@ -18,7 +18,8 @@ He needs the support of 3 more kingdoms to be the ruler.
 Your coding challenge is to have King Shan send secret message to each kingdom and win them over.
 Once he wins 3 more kingdoms, he is the ruler! The secret message needs to contain the letters of the animal 
 in their emblem. 
-For example, secret message to the Land kingdom (emblem: Panda) needs to have the letter 'p','n','d' at-
+
+**For example**, secret message to the Land kingdom (emblem: Panda) needs to have the letter 'p','n','d' at-
 least once and 'a' at-least twice. If he sends "a1d22n333a4444p" to the Land kingdom, he will win them over.
 
 ### Sample Input Output
