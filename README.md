@@ -1,7 +1,7 @@
 # Tame-Of-Thrones
 
 There is no ruler in the universe of Southeros and pandemonium reigns. 
-There are six kingdoms in Southeros.Each kingdom has an animal emblem. They are: 
+There are six kingdoms in Southeros.Each kingdom has an animal emblem. They are: <br/>
 Land emblem - panda, <br/>
 Water emblem - octopus, <br/>
 Ice emblem - mammoth, <br/>
